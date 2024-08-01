@@ -64,7 +64,7 @@ p{
     
     min-width: 100vh;
     height: 100vh;
-    background:url(../practicabuenavista/img/portada_tienda.jpg);
+    background:url(img/portada_tienda.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -142,7 +142,8 @@ p{
     margin: 150px 30px  ;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    gap: 20px;
 }
 
 #contenedor1 img:hover{
@@ -198,21 +199,22 @@ p{
     gap: 50px;
     margin: 100px 0px;
 } 
-#tarjeta1{
+.tarjeta1{
     flex-basis: 200;
     width: 300px;
     height: 250px;
     background-color: #26262b;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
+    margin: 20px 0px 0px 0px;
 }
-#tarjeta1:hover{
+.tarjeta1:hover{
     width: 320px;
     height: 400px;
     transition:0.5s ease-in-out;
     cursor: pointer;
 }
-#tarjeta1 #imagen img{
+.tarjeta1 .imagen img{
     border-radius: 5px;
     position: relative;
     width: 250px;
@@ -221,14 +223,14 @@ p{
     left: 25px;
 }
 
-#tarjeta1  #texto{
+.tarjeta1  .tarjeta-texto{
     color: aliceblue;
     padding: 5px;
     position: relative;
     visibility: hidden;
     opacity: 0;
 }
-#tarjeta1:hover #texto{
+.tarjeta1:hover .tarjeta-texto{
     opacity: 1;
     visibility: visible;
     
