@@ -1,0 +1,480 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background:  aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+p{
+    font-size: 25px;
+}
+#navegacion{
+    background-color:#26262b ;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+#navegacion #logo{
+    width: 50%;
+    display: flex;
+    gap: 15px;
+}
+#navegacion #logo img{
+    width: 70px;
+    padding: 0px 15px 0px 45px;
+}
+#navegacion #logo #logo1{
+    width: 100px;
+    
+}
+#navegacion #logo span{
+    font-size: large;
+    font-family: century gothic;
+    color: aliceblue;
+}
+
+
+
+
+#navegacion1{
+    color: aliceblue;
+    width: 50%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: end;
+    padding: 0 40px;
+}
+#navegacion1 span:hover{
+    color: rgb(137, 141, 145);
+    cursor: pointer;
+}
+
+
+
+
+#portada{
+    
+    min-width: 100vh;
+    height: 100vh;
+    background:url(../practicabuenavista/img/portada_tienda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#centro{
+    width: 150px;
+    height: 90px;
+}
+
+#centro button{
+    
+    width: 150px;
+    height: 90px;
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+    box-shadow: 0 0 0 0.5#939393;
+    background: #939393;
+    border:2px #26262b ;
+    color: black;
+    border-radius: 15px;
+   
+}
+#centro #texto{
+    width: 300px;
+    height: 75px;
+    top: -120px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+   
+}
+#centro:hover #texto{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    color: rgb(23, 25, 27);
+    font-size: 23px;
+
+}
+#centro:hover button{
+    
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    background: #26262b ;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+
+/* parte de los contenedores */
+#contenedor1 img{
+    padding: 0;
+    margin: 0;
+    width: 450px;
+    height: 450px;
+    size: cover ;
+    border-radius: 15px;
+    object-fit: cover;
+    flex-basis: 200;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    
+}
+#contenedor1{
+   
+    border-radius: 15px;
+    margin: 150px 30px  ;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#contenedor1 img:hover{
+    transform: scale(1.05);
+    transition: 0.7s ease-in-out;
+}
+#contenedor2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+#contenedor2 img{
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2)
+}
+#contenedor3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+#contenedor3 img{
+    width: 500px;
+    border-radius: 15px;
+}
+#contenedor4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+#contenedor4 img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+
+
+/* parte de las tarjeta*/
+
+#contenedor5{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px 0px;
+} 
+#tarjeta1{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color: #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+#tarjeta1:hover{
+    width: 320px;
+    height: 400px;
+    transition:0.5s ease-in-out;
+    cursor: pointer;
+}
+#tarjeta1 #imagen img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+
+#tarjeta1  #texto{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta1:hover #texto{
+    opacity: 1;
+    visibility: visible;
+    
+    transition: 0.6s ease-in-out;
+}
+
+/* parte2 */
+#tarjeta2{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color:  #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+#tarjeta2:hover{
+    width: 320px;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#tarjeta2 #imagen2 img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+#tarjeta2  #texto2{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta2:hover #texto2{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s ease-in-out;
+}
+/* parte3 */
+#tarjeta3{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color: #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+#tarjeta3:hover{
+    width: 320px;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#tarjeta3 #imagen3 img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+
+#tarjeta3  #texto3{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta3:hover #texto3{
+    opacity: 1;
+    visibility: visible;
+    
+    transition: 0.6s ease-in-out;
+}
+/* par4 */
+#tarjeta4{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color: #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+#tarjeta4:hover{
+    width: 320px;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#tarjeta4 #imagen4 img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+
+#tarjeta4  #texto4{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta4:hover #texto4{
+    opacity: 1;
+    visibility: visible;
+    
+    transition: 0.6s ease-in-out;
+}
+/* tar5 */
+#tarjeta5{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color: #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+#tarjeta5:hover{
+    width: 320px;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#tarjeta5 #imagen5 img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+
+#tarjeta5  #texto5{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta5:hover #texto5{
+    opacity: 1;
+    visibility: visible;
+    
+    transition: 0.6s ease-in-out;
+}
+/* tar6 */
+#tarjeta5{
+    flex-basis: 200;
+    width: 300px;
+    height: 250px;
+    background-color: #26262b;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+#tarjeta5:hover{
+    width: 320px;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#tarjeta5 #imagen5 img{
+    border-radius: 5px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 25px;
+}
+
+#tarjeta5  #texto5{
+    color: aliceblue;
+    padding: 5px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+#tarjeta5:hover #texto5{
+    opacity: 1;
+    visibility: visible;
+    
+    transition: 0.6s ease-in-out;
+}
+
+/* contenedor numero6 */
+#contenedor6{
+    width: 100%;
+    height: 500px;
+    margin:150px 135px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#contenedor6 img{
+    margin: 25px;
+    flex-basis: 200;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: 0.7s ease-in-out;
+}
+#contenedor6 img:hover{
+    transform: scale(1.05);
+    transition: 0.7s ease-in-out;
+    
+}
+
+
+/* contenedor numero7 */
+
+/* estilos para la parte del footer */
+#footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color:#26262b ;
+    color: aliceblue;
+    
+}
+#footer #logo_pie{
+    width: 50%;
+    display: flex;
+   
+
+}
+#footer #logo_pie img{
+    width: 70px;
+    padding: 0 15px 0 40px;
+}
+
+
+#footer #pie_De_pagina{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#footer #pie_De_pagina p{
+    font-size: small;
+}
